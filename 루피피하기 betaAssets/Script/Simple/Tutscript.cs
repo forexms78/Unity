@@ -73,6 +73,9 @@ public class Tutscript : MonoBehaviour{
         }
 	}
 
+	
+
+	// 아두이노 스위치를 인식해서 이동시키기
     void MoveObject(int Direction)
     {
         if(Direction == 1)
@@ -86,6 +89,8 @@ public class Tutscript : MonoBehaviour{
             transform.localScale = new Vector3(0.4f, 0.4f, 1);
         }
     }
+	
+	//화면의 버튼을 이용해서 움직이기
     public void LButtonDown()
     {
         transform.Translate(Vector3.left * amountToMove, Space.World);
